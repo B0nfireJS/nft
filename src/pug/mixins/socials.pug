@@ -1,0 +1,8 @@
+
+mixin socials(socialArray)
+  div(class="socials")
+    ul.socials__list
+      each link in socialArray
+        li.socials__item
+          a.socials__link(href=link.href)
+            +img(link.name)

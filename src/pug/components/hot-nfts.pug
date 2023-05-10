@@ -1,0 +1,38 @@
+include ../data/btn-list-data
+  include ../data/cards-data
+    section.hot-nfts
+      .hot-nfts__container.container 
+        .hot-nfts__head 
+          h2.hot-nfts__title Hot NFTs
+          .hot-nfts__btn-panel
+            ul.hot-nfts__button-list
+              each item in btnList
+                li.hot-nfts__button-list-item
+                  button.button=item.text
+        .slider
+          .slider__container
+            .slider__items.swiperr
+              .swiper-wrapper
+                each card in hotCardsList
+                  .slider__item.swiper-slide
+                    +card(card.cardImage, card.authorPhoto)
+        .hot-nfts__footer
+          a.hot-nfts__button.button View More
+
+
+    //- section.hot-nfts
+    //-   .hot-nfts__container.container 
+    //-     .hot-nfts__head 
+    //-       h2.hot-nfts__title Hot NFTs
+    //-       .hot-nfts__btn-panel
+    //-         ul.hot-nfts__button-list
+    //-           each item in btnList
+    //-             li.hot-nfts__button-list-item
+    //-               button.button=item.text
+    //-     .hot-nfts__cards
+    //-       ul.hot-nfts__card-list
+    //-         each card in hotCardsList
+    //-           li.hot-nfts__card-list-item 
+    //-             +card(card.cardImage, card.authorPhoto)
+    //-     .hot-nfts__footer
+    //-       a.hot-nfts__button.button View More

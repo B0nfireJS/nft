@@ -1,0 +1,13 @@
+include ../data/actions-data
+  sections.actions
+    .actions__container.container
+      h2.actions__title Create and sell your <br>NFTs
+      .actions__cards
+        ul.actions__list
+          each item in actionsList
+            li.actions__list-item 
+              +img(item.icon)
+              h4.actions__item-title=item.title
+              p.actions__item-description=item.desc
+
+        

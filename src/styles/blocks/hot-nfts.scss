@@ -1,0 +1,78 @@
+.hot-nfts{
+  margin-bottom: 168px;
+  &__container{
+    padding-bottom: 30px;
+  }
+  &__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__title{
+    font-family: $font-family--primary;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    color: $white;
+  }
+  &__button-list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+  }
+  &__button-list-item{
+    margin-left: 24px;
+  }
+  &__card-list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+  }
+  &__card-list-item {
+    margin-bottom: 32px;
+  }
+  &__footer{
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+  .card{
+    min-width: 290px;
+  }
+}
+
+.slider{
+  &__container{
+    margin: 3rem auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+  .swiperr{
+    width: 100%;
+  }
+  &__items{
+    &:not(.swiper-initialized){
+      .swiper-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+      }
+      .swiper-slide{
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  &__item{
+    // text-align: center;
+    // background-color: #ccc;
+    // padding-bottom: 35%;
+    // padding-top: 35%;
+    width: 100%;
+  }
+}

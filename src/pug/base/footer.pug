@@ -1,0 +1,72 @@
+include ../data/socials-data
+
+  mixin footer()
+    -
+      var footerResourcesLinks =[
+        {
+          href: "#",
+          title: "Help Center"
+        },
+        {
+          href: "#",
+          title: "Platform Status"
+        },
+        {
+          href: "#",
+          title: "Partners"
+        },
+        {
+          href: "#",
+          title: "Gas-Free Marketplace"
+        },
+        {
+          href: "#",
+          title: "Blog"
+        }
+      ]
+    -
+      var footerCompanyLinks =[
+        {
+          href: "#",
+          title: "Our Team"
+        },
+        {
+          href: "#",
+          title: "About Us"
+        },
+        {
+          href: "#",
+          title: "Contact Us"
+        },
+        {
+          href: "#",
+          title: "Career"
+        }
+      ]
+
+    footer.footer   
+      .footer__wrapper.container 
+        ul.footer__navigation
+          li.footer__item
+            .footer__logo
+              +img("logo.svg")
+              span.footer__logo-text Panda NFT
+            p.footer__text 
+              |  The world’s first and largest digital marketplace <br> for crypto collectibles and non-fungible tokens<br>(NFTs). Buy, sell,and discover exclusive digital<br> items.
+          li.footer__item 
+            span.footer__navigation-head Resources
+            ul.footer__content-list 
+              each item in footerResourcesLinks
+                    li.footer__content-item
+                      a.footer__content-link(href=item.href)=item.title
+          li.footer__item 
+            span.footer__navigation-head Company
+            ul.footer__content-list 
+              each item in footerCompanyLinks
+                    li.footer__content-item
+                      a.footer__content-link(href=item.href)=item.title
+          li.footer__item
+            span.footer__navigation-head Contact
+            p.footer__address 2715 Ash Dr. San Jose, <br>South Dakota 83475
+            .footer__social-links  
+              +socials(socialsList)

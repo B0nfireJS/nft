@@ -1,0 +1,93 @@
+.card{
+  font-family: $font-family--secondary;
+  color: $white;
+  padding: 24px;
+  // width: 100%;
+  max-width: 400px;
+  // min-width: 290px;
+  border-radius: 24px;
+  background-color: $ebony;
+  // height: fit-content;
+  
+  &__picture{
+    overflow: hidden;
+    width: 100%;
+    border-radius: 24px;
+    margin-bottom: 24px;
+    max-height: 352px;
+    // min-width: 273px; 
+  }
+  &__body{
+    font-family: $font-family--card-title;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  &__title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__block-chain{
+    font-family: $font-family--secondary;
+    padding: 2px 14px;
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: uppercase;
+    background-color: $blue;
+    border-radius: 8px;
+  }
+  &__footer{
+    // width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__author{
+    display: flex;
+  }
+  &__author-avatar{
+    overflow: hidden;
+    height: 56px;
+    border-radius: 16px;
+    // width: 100%;
+    min-width: 56px;
+  }
+  &__author-desc{
+    margin-left: 16px;
+  }
+  &__author-role{
+    font-family: $font-family--primary;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: $bali-hai;
+  }
+  &__author-name{
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 28px;
+  }
+  &__price{
+    text-align: right;
+  }
+  &__price-subtitle{
+    font-family: $font-family--primary;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: $heather;
+  }
+  &__price-title{
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+  }
+  img{
+    width: 100%;
+  }
+}

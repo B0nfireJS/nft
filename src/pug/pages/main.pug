@@ -1,0 +1,20 @@
+extends ../base/layout
+
+block main
+  main 
+    section.hero 
+      .hero__container.container 
+        .hero__body
+          .hero__text
+            h1.hero__title Discover a New Era of Crypto Currency
+            p.hero__description Panda NFT is the primier marketplace for NFT, which are digital items you can truly own. Digital items have existed for a long time, but never like this.
+            a.hero__button.button.button-light(href="#") Get Started
+          .hero__slider
+            include ../components/slider
+            //- +card
+  include ../components/partners
+  include ../components/actions
+  include ../components/auctions
+  include ../components/featured-artist
+  include ../components/hot-nfts
+  include ../components/comunity

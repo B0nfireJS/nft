@@ -1,0 +1,15 @@
+include /mixins
+include /header
+include /footer
+
+doctype html
+html(lang='en')
+  include head
+  body
+    +header
+
+    block main
+    
+    +footer
+
+    include scripts

@@ -1,0 +1,112 @@
+.hero{
+  font-family: $font-family--primary;
+  color: $white;
+  margin-top: 88px;
+  overflow: hidden;
+  @media (max-width: 320px){
+    margin-top: 20px;
+  }
+
+  &:after,
+  &:before{
+    z-index: 1;
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    background-color: rgba(30, 80, 255, 0.75);
+    filter: blur(450px);
+  }
+  &:before{
+    left: -200px;
+    top: -350px;
+    width: 638px;
+    height: 444px;
+  }
+  &:after{
+    // bottom: -190px;
+    right: 160px;
+    background-color: rgba(30, 80, 255, 0.5);
+    width: 638px;
+    height: 587px;
+  }
+
+  &__body{
+    display: flex;
+    align-items: center;
+    @media (max-width: 992px){
+      flex-direction: column;
+    }
+  }
+  &__text{
+    flex: 0 0 53%;
+    max-width: 53%;
+    margin-right: 48px;
+    @media (max-width: 992px){
+      max-width: 100%;
+      text-align: center;
+      margin-bottom: 40px;
+      margin-right: 0;
+    }
+  }
+  &__title{
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 80px;
+    @media (max-width: 992px){
+      font-size: 55px;
+    }
+    @media (max-width: 768px){
+      font-size: 44px;
+    }
+  }
+  &__description{
+    margin-bottom: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+    color: $heather;
+  }
+  &__slider{
+    width: 69%;
+    @media (max-width: 992px){
+      width: 100%;
+    }
+    @media (max-width: 768px){
+      display: none;
+    }
+  }
+  .card{
+    &__title{
+      @media (max-width:1200px){
+        font-size: 18px;
+      }
+    }
+    &__block-chain{
+      @media (max-width:1200px){
+        font-size: 12px;
+        padding: 2px 7px;
+      }
+    }
+    &__author-role{
+      @media (max-width:1200px){
+        font-size: 12px;
+      }
+    }
+    &__price-subtitle{
+      @media (max-width:1200px){
+        font-size: 10px;
+      }
+    }
+    &__author-name{
+      @media (max-width:1200px){
+        font-size: 14px;
+      }
+    }
+    &__price-title{
+      @media (max-width:1200px){
+        font-size: 16px;
+      }
+    }
+  }
+}

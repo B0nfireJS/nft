@@ -1,0 +1,35 @@
+// vendor
+// -------------------
+
+@import "vendor/normalize";
+
+// global
+// -------------------
+
+@import "global/fonts";
+@import "global/container";
+@import "global/layout";
+@import "variables";
+// @import "layout";
+
+// blocks
+// -------------------
+
+@import "blocks/header";
+@import "blocks/footer";
+@import "blocks/main";
+@import "blocks/partners";
+@import "blocks/actions";
+@import "blocks/auctions";
+@import "blocks/featured-artist";
+@import "blocks/hot-nfts";
+@import "blocks/comunity";
+
+// components
+// -------------------
+
+@import "components/button";
+@import "components/socials";
+@import "components/slider";
+@import "components/card";
+@import "components/artist-card";

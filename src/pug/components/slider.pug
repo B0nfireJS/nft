@@ -1,0 +1,6 @@
+include ../data/cards-data
+  .swiper 
+    .swiper-wrapper
+      each item in hotCardsList
+        .swiper-slide
+          +card(item.cardImage, item.authorPhoto)

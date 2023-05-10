@@ -1,0 +1,54 @@
+.artists{
+  font-family: $font-family--primary;
+  color: $white;
+  &__head{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 56px;
+  }
+  &__title{
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 64px;
+    text-transform: capitalize;
+  }
+  &__cards-list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+  }
+}
+
+.slider{
+  &__container{
+    margin: 3rem auto;
+    max-width: 1200px;
+    width: 100%;
+  }
+  .swiperr{
+    width: 100%;
+  }
+  &__itemss{
+    &:not(.swiper-initialized){
+      .swiper-wrapper{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 20px;
+        width: 100%;
+      }
+      .swiper-slide{
+        height: auto;
+        width: 100%;
+      }
+    }
+  }
+  &__item{
+    // text-align: center;
+    // background-color: #ccc;
+    // padding-bottom: 35%;
+    // padding-top: 35%;
+    width: 100%;
+  }
+}

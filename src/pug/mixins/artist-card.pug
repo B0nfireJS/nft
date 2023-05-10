@@ -1,0 +1,15 @@
+include basic/img
+
+mixin artist-card(image, photo, nickname, counter)
+  article.artist-card
+    .artist-card__image
+      +img(image)
+    .artist-card__avatar
+      +img(photo)
+    .artist-card__info 
+      h5.artist-card__nickname=nickname
+      .artist-card__eth
+        .artist-card__eth-icon
+          +img("eth.svg")
+        span.artist-card__eth-count=counter
+        

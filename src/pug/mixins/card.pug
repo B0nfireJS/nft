@@ -1,0 +1,19 @@
+include basic/img
+
+mixin card(image, author)
+  article.card  
+    .card__picture
+      +img(image)
+    .card__body
+      h3.card__title "Hamlet Contemplates ...
+      .card__block-chain BSC
+    .card__footer
+      .card__author 
+        .card__author-avatar
+          +img(author)
+        .card__author-desc
+          span.card__author-role Creator
+          h5.card__author-name SalvadorDali
+      .card__price
+        span.card__price-subtitle Current Bid
+        h4.card__price-title 4.89 ETH

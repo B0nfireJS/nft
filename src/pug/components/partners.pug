@@ -1,0 +1,8 @@
+include ../data/partners-data
+
+  section.partners
+    .partners__container.container
+      .partners__items
+        each item in partnersList
+          .partners__item
+            +img(item.name)

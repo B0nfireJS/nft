@@ -1,0 +1,11 @@
+.socials{
+  &__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+  }
+  &__item{
+    margin-right: 24px;
+  }
+}

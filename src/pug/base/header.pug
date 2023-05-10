@@ -1,0 +1,61 @@
+mixin header()
+  -
+    var headerLinks = [
+      {
+        href: "#",
+        text: "Home"
+      },
+      {
+        href: "#",
+        text: "Discover"
+      },
+      {
+        href: "#",
+        text: "Docs"
+      },
+      {
+        href: "#",
+        text: "Blog"
+      },
+      {
+        href: "#",
+        text: "About Us"
+      },
+      {
+        href: "#",
+        text: "Contact Us"
+      },
+    ]
+
+  //- header.header
+  //-   .header__wrapper.container 
+  //-     .header__logo
+  //-       +img("logo.svg")
+  //-       span.header__logo-text Panda NFT
+  //-     .header__nav
+  //-       ul.header__nav-list 
+  //-          each link, index in headerLinks
+  //-           li.header__nav-item
+  //-             a.header__nav-link(href=link.href)=link.text
+  //-     a.header__button.button(href="#") Connect Wallet
+  //-     .header__menu
+  //-       span 
+  //-       span 
+  //-       span 
+
+  header.header
+    .header__wrapper.container 
+      .header__logo
+        +img("logo.svg")
+        span.header__logo-text Panda NFT
+      .header__nav
+        ul.header__nav-list 
+           each link, index in headerLinks
+            li.header__nav-item
+              a.header__nav-link(href=link.href)=link.text
+      .header__buttons
+        a.header__button.button(href="#") Connect Wallet
+        .header__menu
+          span 
+          span 
+          span 

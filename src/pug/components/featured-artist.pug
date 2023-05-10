@@ -1,0 +1,18 @@
+section.artists 
+  .artists__container.container 
+    .artists__head
+      h2.artists__title Featured Artist
+      a.artists__button.button(href="#") View More
+    .artists__body
+      .artists__cards 
+        ul.artists__cards-list
+          each item in auctionCardsList
+            li.artists__cards-list-item
+              +artist-card(item.cardImage, item.authorPhoto, item.nickname, item.counter)
+      //- .slider
+      //-   .slider__container
+      //-     .slider__itemss
+      //-       .swiper-wrapper
+      //-         each item in auctionCardsList
+      //-           .slider__item.swiper-slide
+      //-             +artist-card(item.cardImage, item.authorPhoto, item.nickname, item.counter)

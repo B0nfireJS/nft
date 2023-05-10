@@ -1,0 +1,129 @@
+body{
+  &._lock{
+    overflow: hidden;
+  }
+}
+.header{
+  font-family: $font-family--primary;
+  margin-top: 40px;
+  margin-bottom: 20px;
+
+  &__wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    // @media(max-width: 1200px){
+    //   margin: 0 auto;
+    // }
+  }
+  &__logo{
+    display: flex;
+    align-items: center;
+  }
+  &__logo-text{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: $white;
+    margin-left: 10px;
+
+    @media(max-width: 500px){
+      display: none;
+    }
+  }
+  &__nav{
+    @media (max-width: 992px){
+      position: absolute;
+      top: 0;
+      left: -100%;
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      overflow: auto;
+      padding: 20px;
+      background-color: $background;
+      z-index: 2;
+      transition: left 0.5s;
+      &.active{
+        left: 0;
+      }
+    }
+  }
+  &__nav-list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    @media (max-width: 992px){
+      flex-direction: column;
+      margin: auto;
+      gap: 60px;
+    }
+  }
+  &__nav-item{
+    margin-right: 32px;
+  }
+  &__nav-link{
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 32px;
+    color: $heather;
+    text-decoration: none;
+
+    @media(max-width: 992px){
+      font-size: 30px;
+      line-height: 50px;
+    }
+  }
+  &__buttons{
+    display: flex;
+    align-items: center;
+  }
+  &__menu{
+    display: none;
+    @media (max-width: 992px){
+      display: block;
+      height: 18px;
+      width: 30px;
+      position: relative;
+      cursor: pointer;
+      margin-left: 25px;
+      z-index: 5;
+      span{
+        transition: all .3s ease 0s;
+        top: calc(50% - 1px);
+        left: 0;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: $white;
+        &:first-child{
+          top: 0;
+        }
+        &:last-child{
+          top: auto;
+          bottom: 0;
+        }
+      }
+      &.active{
+        span{
+          transform: scale(0);
+          &:first-child{
+            transform: rotate(-45deg);
+            top: calc(50% - 1px);
+          }
+          &:last-child{
+            transform: rotate(45deg);
+            bottom: calc(50% - 1px);
+          }
+        }
+      }
+    }
+  }
+  .button{
+    @media(max-width: 500px){
+      font-size: 12px;
+      padding: 12px;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+include ../data/cards-data
+  section.auctions 
+    .auctions__container.container 
+      .auctions__head
+        h2.auctions__title Live auctions
+        a.auctions__button.button(href="#") View More
+      .auctions__body
+        ul.auctions__cards
+          each item in auctionsCardsList
+            li.auctions__card
+              +card(item.cardImage, item.authorPhoto)
